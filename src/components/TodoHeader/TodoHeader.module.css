@@ -1,0 +1,55 @@
+.todo-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0px 1.25rem;
+}
+
+.todo-header svg {
+    color: var(--color-green);
+    font-size: 1.5rem;
+}
+
+.left,
+.right {
+    flex: 1;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 3;
+    gap: 0.5rem;
+}
+
+.center span {
+    white-space: nowrap;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: var(--color-icon);
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    transition: transform 0.3s, filter 0.3s;
+    gap: 0.25rem;
+    white-space: nowrap;
+}
+
+.button svg {
+    color: var(--color-icon);
+    font-size: 1rem;
+}
+
+.button:hover {
+    filter: brightness(1.4);
+    transform: scale(1.08);
+}

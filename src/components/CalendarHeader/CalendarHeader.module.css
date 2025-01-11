@@ -1,0 +1,52 @@
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.year-nav,
+.month-nav {
+    display: flex;
+    align-items: center;
+}
+.month-nav {
+    width: 9rem;
+}
+
+.month-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.year-nav svg,
+.month-nav svg {
+    color: var(--color-icon);
+}
+
+.calendar-header button {
+    display: flex;
+    align-items: center;
+    margin: 0 0.5rem;
+}
+
+.btn-year {
+    font-size: 1.25rem;
+}
+
+.btn-month {
+    font-size: 1rem;
+}
+
+.btn-today {
+    padding: 0.25rem 0.5rem;
+    color: var(--color-icon);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: filter 0.3s, transform 0.3s;
+    white-space: nowrap;
+}
+
+.btn-today:hover, .btn-today:focus {
+    filter: brightness(1.4);
+    transform: scale(1.08);
+}
